@@ -17,11 +17,7 @@ map("v", "K", ":m '<-2<CR>gv=gv", { desc = "move block up" })
 
 -- use jk to escape
 map("t", "jk", "<C-\\><C-n>", { desc = "move block down" })
-
--- scroll and center
-map("n", "<C-d>", "<C-d>zz", { desc = "scroll and center" })
-
--- nvimtree
+-- scroll and center map("n", "<C-d>", "<C-d>zz", { desc = "scroll and center" }) nvimtree
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Nvimtree Tree Toggle" })
 
 -- map("n", "<leader>ca", "<cmd>vim.lsp.buf.code_action()<CR>", { desc = "Nvimtree Tree Toggle" })
@@ -47,6 +43,12 @@ for i = 1, 9, 1 do
   end)
 end
 
+map("n", "<c-h>", "<cmd>TmuxNavigateLeft<cr>")
+map("n", "<c-j>", "<cmd>TmuxNavigateDown<cr>")
+map("n", "<c-k>", "<cmd>TmuxNavigateUp<cr>")
+map("n", "<c-l>", "<cmd>TmuxNavigateRight<cr>")
+map("n", "<c-\\>", "<cmd>TmuxNavigatePrevious<cr>")
+
 -- Disable mappings
 local nomap = vim.keymap.del
 
@@ -54,3 +56,7 @@ nomap("n", "<C-n>")
 
 nomap("n", "<tab>")
 nomap("n", "<S-tab>")
+-- nomap("n", "<C-h>")
+-- nomap("n", "<C-l>")
+-- nomap("n", "<C-j>")
+-- nomap("n", "<C-k>")

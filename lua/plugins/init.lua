@@ -82,4 +82,14 @@ return {
       { "<leader>cs", ":lua vim.lsp.buf.code_action()<CR>" },
     },
   },
+  {
+    "christoomey/vim-tmux-navigator",
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
+    },
+  },
 }
