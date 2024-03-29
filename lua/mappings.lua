@@ -24,6 +24,13 @@ map("n", "<C-d>", "<C-d>zz", { desc = "scroll and center" })
 -- nvimtree
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Nvimtree Tree Toggle" })
 
+-- map("n", "<leader>ca", "<cmd>vim.lsp.buf.code_action()<CR>", { desc = "Nvimtree Tree Toggle" })
+map("n", "<leader>ca", "<leader>cs<CR>", { desc = "Nvimtree Tree Toggle" })
+
+map("n", "<leader>cc", "<cmd>lua vim.lsp.codelens.run()<CR>", { desc = "run codelens" })
+
+map("n", "<leader>ct", "<cmd>TroubleToggle<CR>", { desc = "run codelens" })
+
 -- tabufline
 map("n", "<S-l>", function()
   require("nvchad.tabufline").next()

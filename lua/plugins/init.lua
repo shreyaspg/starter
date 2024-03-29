@@ -13,6 +13,11 @@ return {
       require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
+    opts = {
+      codelens = {
+        enabled = true,
+      },
+    },
   },
 
   {
@@ -46,5 +51,35 @@ return {
       dofile(vim.g.base46_cache .. "nvimtree")
       require("nvim-tree").setup(opts)
     end,
+  },
+  {
+    "folke/trouble.nvim",
+    lazy = false,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    module = "telescope",
+    opts = {
+      extensions_list = { "ui-select" },
+      extensions = {
+        ["ui-select"] = {
+          require("telescope.themes").get_dropdown {},
+        },
+      },
+    },
+  },
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+    lazy = true,
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    keys = {
+      { "<leader>cs", ":lua vim.lsp.buf.code_action()<CR>" },
+    },
   },
 }

@@ -7,9 +7,10 @@ local options = {
   hijack_cursor = true,
   hijack_unnamed_buffer_when_opening = false,
   sync_root_with_cwd = true,
+  respect_buf_cwd = true,
   update_focused_file = {
     enable = true,
-    update_root = false,
+    update_root = true,
   },
   view = {
     adaptive_size = false,
@@ -30,7 +31,7 @@ local options = {
     },
   },
   renderer = {
-    root_folder_label = false,
+    root_folder_label = true,
     highlight_git = true,
     highlight_opened_files = "none",
 
@@ -50,7 +51,7 @@ local options = {
         default = "󰈚",
         symlink = "",
         folder = {
-          default = "",
+          default = "",
           empty = "",
           empty_open = "",
           open = "",
