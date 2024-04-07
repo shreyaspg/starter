@@ -43,11 +43,19 @@ for i = 1, 9, 1 do
   end)
 end
 
+-- close quickfix
+map("n", "<c-q>", "<cmd>cclose<CR>", { desc = "close quickfix" })
+
+-- tmux navigation maps
 map("n", "<c-h>", "<cmd>TmuxNavigateLeft<cr>")
 map("n", "<c-j>", "<cmd>TmuxNavigateDown<cr>")
 map("n", "<c-k>", "<cmd>TmuxNavigateUp<cr>")
 map("n", "<c-l>", "<cmd>TmuxNavigateRight<cr>")
 map("n", "<c-\\>", "<cmd>TmuxNavigatePrevious<cr>")
+
+--undotree
+map("n", "<leader>z", "<cmd>UndotreeToggle<cr>")
+map("n", "<leader>zf", "<cmd>UndotreeFocus<cr>")
 
 -- Disable mappings
 local nomap = vim.keymap.del
