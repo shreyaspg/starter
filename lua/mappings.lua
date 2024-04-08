@@ -57,6 +57,9 @@ map("n", "<c-\\>", "<cmd>TmuxNavigatePrevious<cr>")
 map("n", "<leader>z", "<cmd>UndotreeToggle<cr>")
 map("n", "<leader>zf", "<cmd>UndotreeFocus<cr>")
 
+map("n", "<leader>ss", "<cmd>SessionSave<cr>")
+map("n", "<leader>sr", "<cmd>SessionRestore<cr>")
+
 -- Disable mappings
 local nomap = vim.keymap.del
 
