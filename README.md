@@ -11,3 +11,13 @@ Config for NvChad
     - nvim-telescope/telescope-ui-select.nvim
     - christoomey/vim-tmux-navigator
     - mbbill/undotree
+    - rmagatti/auto-session
+
+## Configured servers
+    - rust_analyzer
+    - gopls
+    - taplo
+    - bashls
+    - ruby_ls
+    - clangd
+
