@@ -103,4 +103,11 @@ return {
       }
     end,
   },
+  { "Bekaboo/deadcolumn.nvim", event = "VeryLazy" },
+  {
+    "morhetz/gruvbox",
+    config = function()
+      vim.cmd.colorscheme "gruvbox"
+    end,
+  },
 }

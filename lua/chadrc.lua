@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-  theme = "gruvchad",
+  theme = "ayu_dark",
   statusline = {
     theme = "vscode",
     order = { "mode", "cwd", "file", "git", "%=", "diagnostics", "lsp", "lsp_msg", "cursor" },

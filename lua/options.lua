@@ -14,3 +14,5 @@ vim.opt.cursorline = true
 vim.opt.cursorlineopt = "both"
 
 vim.opt.relativenumber = true
+
+vim.opt.colorcolumn = "80"
