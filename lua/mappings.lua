@@ -60,6 +60,9 @@ map("n", "<leader>zf", "<cmd>UndotreeFocus<cr>")
 map("n", "<leader>ss", "<cmd>SessionSave<cr>")
 map("n", "<leader>sr", "<cmd>SessionRestore<cr>")
 
+map("n", "<leader>gr", "<cmd>Telescope lsp_references<cr>", { desc = "Telescope lsp_references" })
+map("n", "<leader>gi", "<cmd>Telescope lsp_implementations<cr>", { desc = "Telescope lsp_implementations" })
+
 -- Disable mappings
 local nomap = vim.keymap.del
 
@@ -71,3 +74,4 @@ nomap("n", "<S-tab>")
 -- nomap("n", "<C-l>")
 -- nomap("n", "<C-j>")
 -- nomap("n", "<C-k>")
+--
