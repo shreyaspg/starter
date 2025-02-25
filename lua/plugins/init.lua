@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre',
+    event = "BufWritePre",
     opts = require "configs.conform",
   },
 
@@ -37,6 +37,7 @@ return {
         "stylua",
         "gopls",
         "rust_analyzer",
+        "clangd",
       },
     },
   },
